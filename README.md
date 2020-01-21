@@ -1,7 +1,7 @@
 
 
 ## Getting Started
-This projected is driven and implemented basd on `angular-seed`
+This projected is driven and implemented based on `angular-seed`
 
 ### Prerequisites
 
