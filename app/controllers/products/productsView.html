@@ -1,0 +1,14 @@
+<div>
+    <div class="loader-container" ng-show="isLoading">
+        <i class="fa fa-circle-o-notch fa-spin" style="font-size:4em"></i>
+    </div>
+    <div ng-if="!isLoading" ng-repeat="product in products track by $index" class="card" style="width: 18rem;">
+        <div class="card-img-top">{{:: product.img}}</div>
+        <div class="card-body">
+            <h5 class="card-title">{{:: product.name}}</h5>
+            <p class="card-text">{{:: product.desc}}</p>
+            <p class="card-text">{{:: product.price | currency}}</p>
+            <button ng-click="addToCart(product)" class="btn btn-primary">Add to cart</button>
+        </div>
+    </div>
+</div>

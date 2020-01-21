@@ -1,0 +1,70 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.card {
+  float: left;
+  margin: 3em 0em;
+}
+.card:nth-child(3n) {
+  float: left;
+  margin: 3em 4.2em;
+}
+.card-img-top {
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  background: #ddd;
+  border-radius: 50%;
+  vertical-align: bottom;
+  display: table-cell;
+  margin: 0.2em auto;
+  padding: 14% 0;
+  font-size: 2em;
+}
+
+.card-body {
+  padding-top:0;
+  text-align:center;
+}
+
+.inner-container {
+  padding:6em 3em 3em 3em;
+  background: #f8f9fa !important;
+  float:left;
+  width:100%;
+}
+.loader-container {
+  width: 100%;
+  margin: 10% auto;
+  min-height: 200px;
+  text-align: center;
+}
+.navbar-expand-lg {
+    position: fixed;
+    z-index: 121;
+    width: 86.7%;
+    border-bottom:5px solid #000;
+}
